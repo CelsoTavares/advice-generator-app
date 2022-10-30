@@ -60,7 +60,7 @@ p
   
 
 h1
-  font-size: 28px
+  font-size: min(5vw, 28px)
   color: $LightCyan
   text-align: center
   width: 90%
@@ -85,6 +85,7 @@ h1
 .desktopImg 
   position: absolute
   bottom: 70px
+  width: 90%
 
 .mobileImg
   display: none
@@ -99,8 +100,16 @@ h1
   a  
     color: hsl(228, 45%, 44%)
 
-@media( max-width:570px)
-  main
-    width: 100%
-    margin: 0 5%
-    
+@media (max-width: 570px)
+ main
+  width: 100%
+  margin: 0 5% 0 5%
+  
+ .desktopImg
+  display: none
+
+ .mobileImg
+  display: block
+  width: 90%
+  position: absolute
+  bottom: 70px

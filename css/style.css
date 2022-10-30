@@ -33,7 +33,7 @@ p {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: min(5vw, 28px);
   color: hsl(193deg, 38%, 86%);
   text-align: center;
   width: 90%;
@@ -59,6 +59,7 @@ h1 {
 .desktopImg {
   position: absolute;
   bottom: 70px;
+  width: 90%;
 }
 
 .mobileImg {
@@ -79,7 +80,16 @@ h1 {
 @media (max-width: 570px) {
   main {
     width: 100%;
-    margin: 0 5%;
+    margin: 0 5% 0 5%;
+  }
+  .desktopImg {
+    display: none;
+  }
+  .mobileImg {
+    display: block;
+    width: 90%;
+    position: absolute;
+    bottom: 70px;
   }
 }
 
