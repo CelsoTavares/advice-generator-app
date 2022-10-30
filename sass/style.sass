@@ -1,0 +1,106 @@
+// ## Layout
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+// - Light Cyan: hsl(193, 38%, 86%)
+// - Neon Green: hsl(150, 100%, 66%)
+
+// ### Neutral
+
+// - Grayish Blue: hsl(217, 19%, 38%)
+// - Dark Grayish Blue: hsl(217, 19%, 24%)
+// - Dark Blue: hsl(218, 23%, 16%)
+
+// - Font size (quote): 28px
+
+// ### Font
+// - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+// - Weights: 800
+
+$LightCyan: hsl(193, 38%, 86%)
+$NeonGreen: hsl(150, 100%, 66%)
+
+$GrayishBlue: hsl(217, 19%, 38%)
+$DarkGrayishBlue: hsl(217, 19%, 24%)
+$DarkBlue: hsl(218, 23%, 16%)  
+
+  
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Manrope', sans-serif
+
+body
+  background: $DarkBlue
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+
+main
+  background: $DarkGrayishBlue
+  width: 540px
+  height: 335px
+  border-radius: 15px 
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+
+p
+  color: $NeonGreen
+  font-size: 12px
+  letter-spacing: 5px
+  margin: 40px 0 20px 0
+  
+
+h1
+  font-size: 28px
+  color: $LightCyan
+  text-align: center
+  width: 90%
+ 
+
+#circle
+  background: $NeonGreen
+  width: 66px
+  height: 66px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: -33px
+  cursor: pointer
+  transition: all 0.3s
+  
+  &:hover
+    box-shadow: 1px 1px 40px $NeonGreen
+
+.desktopImg 
+  position: absolute
+  bottom: 70px
+
+.mobileImg
+  display: none
+
+.attribution 
+  font-size: 11px
+  width: 100% 
+  text-align: center 
+  position: absolute
+  bottom: 10px
+
+  a  
+    color: hsl(228, 45%, 44%)
+
+@media( max-width:570px)
+  main
+    width: 100%
+    margin: 0 5%
+    
