@@ -28,8 +28,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://advice-generator-app-lac.vercel.app/)
-- API URL: [Advice Slip JSON API](https://api.adviceslip.com/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/sassscss-flebox-api-to58kd3jid)
+- Live Site URL: [Live site](https://advice-generator-app-lac.vercel.app/)
+
 
 
 ### Built with
@@ -37,7 +38,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- API
+- API URL: [Advice Slip JSON API](https://api.adviceslip.com/)
 - Javascript
 
 ### Useful resources
