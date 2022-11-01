@@ -9,4 +9,4 @@ async function ativar() {
   document.querySelector('#advice').innerHTML = `ADVICE #${id}`
   document.querySelector('#app').innerHTML = `“${conselho}”`
 }
-ativar()
+
